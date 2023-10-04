@@ -23,7 +23,7 @@ const ThreeStepProcess: React.FC = () => {
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <form className='-mt-40'>
                 {step === 1 && <FirstStep handleNext={handleNext} />}
-                {step === 2 && <SecondStep handleNext={handleNext} />}
+                {step === 2 && <SecondStep handleNext={handleNext} handlePrevious={handlePrevious} />}
             </form>
         </div>
     );
