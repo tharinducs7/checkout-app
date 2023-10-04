@@ -1,10 +1,6 @@
-import Button from '../button/Button';
 import LinkButton from '../button/LinkButton';
-import AppleLogo from '../../../public/apple.svg'
-import GoogleLogo from '../../../public/google.svg'
-import MicrosoftLogo from '../../../public/microsoft.svg'
 import Card from '../card/Card';
-import { cardData } from '../../mock/data';
+import { cardData } from '../../mock/second-step-data';
 
 type SecondStepProps = {
     handleNext: () => void;
@@ -15,7 +11,7 @@ const SecondStep: React.FC<SecondStepProps> = ({ handleNext, handlePrevious }) =
         <>
             <div className="space-y-12">
                 <div className="pb-4 mt-2">
-                    <h2 className="text-base text-2xl font-semibold leading-7 text-center text-gray-900">Confirm Your Child's Grade Level</h2>
+                    <h2 className="text-2xl font-semibold leading-7 text-center text-gray-900">Confirm Your Child's Grade Level</h2>
 
                     {cardData.map((card, index) => (
                         <Card
@@ -27,8 +23,6 @@ const SecondStep: React.FC<SecondStepProps> = ({ handleNext, handlePrevious }) =
                         />
                     ))}
                 </div>
-
-
             </div>
 
             <div className="flex items-center justify-between mt-6 gap-x-6">
@@ -39,7 +33,6 @@ const SecondStep: React.FC<SecondStepProps> = ({ handleNext, handlePrevious }) =
                      Next
                  </LinkButton>
             </div>
-
         </>
     )
 }

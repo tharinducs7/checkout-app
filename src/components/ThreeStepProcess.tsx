@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import FirstStep from './steps/FirstStep';
 import SecondStep from './steps/SecondStep';
+import ThirdStep from './steps/ThirdStep';
 
 const ThreeStepProcess: React.FC = () => {
     const [step, setStep] = useState(1);
@@ -24,6 +25,7 @@ const ThreeStepProcess: React.FC = () => {
             <form className='-mt-40'>
                 {step === 1 && <FirstStep handleNext={handleNext} />}
                 {step === 2 && <SecondStep handleNext={handleNext} handlePrevious={handlePrevious} />}
+                 {step === 3 && <ThirdStep handleNext={handleNext} handlePrevious={handlePrevious} />}
             </form>
         </div>
     );
