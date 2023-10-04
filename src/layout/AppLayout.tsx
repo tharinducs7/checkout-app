@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-
+import logo from "../../public/euka-future-learning-logo.svg"
 interface AppLayoutProps {
   children: ReactNode;
 }
@@ -10,7 +10,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
       {/* Top Navbar */}
         <div className="navbar bg-base-100">
         <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a className="text-xl normal-case btn btn-ghost"> <img src={logo} title='logo' className='w-20'/> </a>
         </div>
         <div className="flex-none">
             <button className="btn btn-square btn-ghost">
@@ -20,7 +20,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
         </div>
 
       {/* Content Centered */}
-      <div className="container mx-auto p-4">{children}</div>
+      <div className="container p-4 mx-auto">{children}</div>
     </div>
   );
 };

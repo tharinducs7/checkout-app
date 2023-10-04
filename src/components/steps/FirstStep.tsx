@@ -55,20 +55,20 @@ const FirstStep: React.FC<FirstStepProps> = ({ handleNext }) => {
             <div className="pb-12">
                 <Button variant="secondary" name="add_new" className='w-full p-2 mb-2 text-left'>
                     <div className="flex items-center">
-                        <img src={AppleLogo} className="w-8 h-8 mr-3" title='apple' />
-                        <span className="text-left">Next</span>
-                    </div>
-                </Button>
-                <Button variant="secondary" name="add_new" className='w-full p-2 mb-2 text-left'>
-                    <div className="flex items-center">
                         <img src={GoogleLogo} className="w-8 h-8 mr-3" title='apple' />
-                        <span className="text-left">Next</span>
+                        <span className="text-left">Conitune with Google</span>
                     </div>
                 </Button>
                 <Button variant="secondary" name="add_new" className='w-full p-2 mb-2 text-left'>
                     <div className="flex items-center">
                         <img src={MicrosoftLogo} className="w-8 h-8 mr-3" title='apple' />
-                        <span className="text-left">Next</span>
+                        <span className="text-left">Conitune with Microsoft</span>
+                    </div>
+                </Button>
+                 <Button variant="secondary" name="add_new" className='w-full p-2 mb-2 text-left'>
+                    <div className="flex items-center">
+                        <img src={AppleLogo} className="w-8 h-8 mr-3" title='apple' />
+                        <span className="text-left">Conitune with Apple</span>
                     </div>
                 </Button>
             </div>
