@@ -15,6 +15,7 @@ type Props = {
   role?: string;
   ariaLabel?: string;
   href?: string;
+  onClick?: () => void; 
 } & iSharedButton
 
 const LinkButton = ({
@@ -30,7 +31,7 @@ const LinkButton = ({
   role,
   ariaLabel,
   href,
-  ...rest
+  onClick,
 }: Props) => {
   const renderButton = (as?: ElementType) => (
     <Button
@@ -52,7 +53,7 @@ const LinkButton = ({
   return disabled ? (
     renderButton()
   ) : (
-    <a href={href} className={clsxm(styles.linkButton, mode === 'dark' && styles.dark, className)} {...rest}>
+    <a onClick={onClick} className={clsxm(styles.linkButton, mode === 'dark' && styles.dark, className)}>
       {renderButton('span')}
     </a>
   );

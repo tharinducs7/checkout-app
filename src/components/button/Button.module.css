@@ -17,19 +17,19 @@
 
 .primary:hover,
 .primary:active {
-  @apply bg-primary-focus;
+  @apply bg-slate-500;
 }
 
 .secondary,
 .ghost {
-  @apply border-2 border-primary bg-transparent;
+  @apply border-2 bg-slate-700 bg-transparent;
 }
 
 .secondary:hover,
 .secondary:active,
 .ghost:hover,
 .ghost:active {
-  @apply bg-primary-content;
+  @apply bg-yellow-100;
 }
 
 .secondary.disabled,
@@ -74,46 +74,4 @@
 
 .rounded {
   @apply rounded-full;
-}
-
-.btn.dark:focus-visible {
-  @apply outline-white;
-}
-
-.dark.primary {
-  @apply bg-white text-primary;
-}
-
-.dark.primary:hover,
-.dark.primary:active {
-  @apply bg-primary-focus text-white;
-}
-
-.dark.primary.disabled,
-.dark.primary[disabled] {
-  @apply bg-gray-50 text-gray-200;
-}
-
-.dark.secondary {
-  @apply border-white text-white;
-}
-
-.dark.secondary:hover,
-.dark.secondary:active {
-  @apply border-primary-focus bg-primary-focus text-white;
-}
-
-.dark.secondary.disabled,
-.dark.secondary[disabled] {
-  @apply border-gray-100 text-gray-100;
-}
-
-.white {
-  @apply border-2 border-gray-200 bg-white text-black;
-  height: 3.375rem !important;
-}
-
-.white:hover,
-.white:active {
-  @apply border-2 border-gray-900 bg-gray-50;
 }
