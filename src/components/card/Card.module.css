@@ -1,0 +1,7 @@
+.card {
+    @apply bg-white rounded-lg shadow-md p-4 mb-4 min-h-[150px]
+}
+
+.card:hover {
+  border: 2px solid gold;
+}
