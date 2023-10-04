@@ -1,0 +1,15 @@
+.linkButton {
+  @apply inline-flex;
+}
+
+.linkButton > span {
+  @apply basis-full;
+}
+
+.linkButton:focus-visible {
+  @apply rounded-md outline outline-3 outline-offset-4 outline-black;
+}
+
+.dark:focus-visible {
+  @apply outline-white;
+}

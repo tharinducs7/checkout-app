@@ -1,0 +1,119 @@
+.btn {
+  @apply inline-flex h-12 items-center justify-center gap-x-3 rounded-md px-8 text-sm font-bold text-gray-900 lg:h-10;
+}
+
+.btn:focus-visible {
+  @apply outline outline-3 outline-offset-4 outline-black;
+}
+
+.btn.disabled,
+.btn[disabled] {
+  @apply pointer-events-none bg-gray-50 text-gray-200;
+}
+
+.primary {
+  @apply bg-slate-700 text-white;
+}
+
+.primary:hover,
+.primary:active {
+  @apply bg-primary-focus;
+}
+
+.secondary,
+.ghost {
+  @apply border-2 border-primary bg-transparent;
+}
+
+.secondary:hover,
+.secondary:active,
+.ghost:hover,
+.ghost:active {
+  @apply bg-primary-content;
+}
+
+.secondary.disabled,
+.secondary[disabled],
+.ghost.disabled,
+.ghost[disabled] {
+  @apply border-gray-100 bg-transparent;
+}
+
+.tertiary {
+  @apply bg-cyan-500 text-white;
+}
+
+.tertiary:hover,
+.tertiary:active {
+  @apply bg-cyan-600;
+}
+
+.small {
+  @apply py-2;
+}
+
+.iconOnly {
+  @apply w-12 p-0 lg:w-16;
+}
+
+.transparent {
+  @apply border-none bg-transparent;
+}
+
+.transparent.iconOnly {
+  @apply h-8 w-8;
+}
+
+.transparent.iconOnly:focus-visible {
+  @apply outline-2 outline-offset-0;
+}
+
+.ghost {
+  @apply bg-secondary-content;
+}
+
+.rounded {
+  @apply rounded-full;
+}
+
+.btn.dark:focus-visible {
+  @apply outline-white;
+}
+
+.dark.primary {
+  @apply bg-white text-primary;
+}
+
+.dark.primary:hover,
+.dark.primary:active {
+  @apply bg-primary-focus text-white;
+}
+
+.dark.primary.disabled,
+.dark.primary[disabled] {
+  @apply bg-gray-50 text-gray-200;
+}
+
+.dark.secondary {
+  @apply border-white text-white;
+}
+
+.dark.secondary:hover,
+.dark.secondary:active {
+  @apply border-primary-focus bg-primary-focus text-white;
+}
+
+.dark.secondary.disabled,
+.dark.secondary[disabled] {
+  @apply border-gray-100 text-gray-100;
+}
+
+.white {
+  @apply border-2 border-gray-200 bg-white text-black;
+  height: 3.375rem !important;
+}
+
+.white:hover,
+.white:active {
+  @apply border-2 border-gray-900 bg-gray-50;
+}

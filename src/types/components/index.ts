@@ -1,0 +1,1 @@
+export type { iSharedButton } from './shared-button.type';
